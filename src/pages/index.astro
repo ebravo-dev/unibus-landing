@@ -221,6 +221,48 @@ const whatsappUrl = '#';
 				</a>
 			</div>
 		</section>
+
+		<!-- ========== COMO FUNCIONA ========== -->
+		<section class="how-works-section">
+			<div class="container">
+				<h2 class="section-title">Cómo funciona</h2>
+				<p class="section-subtitle">
+					Los alumnos son clave para Unibus. Tu participación ayuda a detectar la ubicación del autobús.
+				</p>
+				<div class="how-works-grid">
+					<div class="how-card">
+						<div class="how-icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>
+						</div>
+						<h3>Descarga la app</h3>
+						<p>Instala Unibus en tu celular Android durante la beta universitaria.</p>
+					</div>
+					<div class="how-card">
+						<div class="how-icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+						</div>
+						<h3>Activa los permisos</h3>
+						<p>Autoriza el acceso a tu ubicación. Sin esto, no podemos detectar el autobús.</p>
+					</div>
+					<div class="how-card">
+						<div class="how-icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+						</div>
+						<h3>Compartimos datos</h3>
+						<p>Analizamos las geoposiciones de los alumnos para calcular dónde está el Unibus en tiempo real.</p>
+					</div>
+				</div>
+				<div class="how-highlight">
+					<div class="highlight-icon">
+						<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+					</div>
+					<div>
+						<h4>Tu participación es esencial</h4>
+						<p>Cada alumno que acepta los permisos mejora la precisión de Unibus. Juntos hacemos que el sistema funcione.</p>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<!-- ========== FOOTER ========== -->
@@ -1056,8 +1098,105 @@ const whatsappUrl = '#';
 	}
 
 	/* ===========================
-	   FOOTER
+	   HOW IT WORKS
 	   =========================== */
+	.how-works-section {
+		padding: 4rem 0 5rem;
+	}
+
+	.how-works-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.5rem;
+		margin-bottom: 3rem;
+	}
+
+	.how-card {
+		text-align: center;
+		padding: 1.5rem;
+		border-radius: var(--radius-md);
+		background: var(--surface);
+		border: 1px solid var(--surface-border);
+		transition: all 250ms ease;
+	}
+
+	.how-card:hover {
+		background: var(--surface-hover);
+		transform: translateY(-4px);
+	}
+
+	.how-icon {
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		background: var(--accent-soft);
+		border: 2px solid var(--accent);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto 1rem;
+		color: var(--accent);
+	}
+
+	.how-icon svg {
+		width: 28px;
+		height: 28px;
+	}
+
+	.how-card h3 {
+		font-size: 1.05rem;
+		font-weight: 700;
+		margin-bottom: 0.75rem;
+	}
+
+	.how-card p {
+		font-size: 0.9rem;
+		line-height: 1.6;
+		color: var(--text-muted);
+	}
+
+	.how-highlight {
+		display: flex;
+		align-items: flex-start;
+		gap: 1.5rem;
+		background: var(--accent-soft);
+		border: 1px solid var(--accent);
+		border-radius: var(--radius-md);
+		padding: 2rem;
+	}
+
+	.highlight-icon {
+		width: 48px;
+		height: 48px;
+		min-width: 48px;
+		border-radius: 50%;
+		background: var(--accent);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+	}
+
+	.highlight-icon svg {
+		width: 24px;
+		height: 24px;
+	}
+
+	.how-highlight h4 {
+		font-size: 1.05rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.how-highlight p {
+		font-size: 0.95rem;
+		line-height: 1.6;
+		color: var(--text-muted);
+	}
+
+	/* ===========================
+	   FOOTER
+	   =========================== -->
 	.footer {
 		border-top: 1px solid var(--surface-border);
 		padding: 2rem 0;
@@ -1150,6 +1289,18 @@ const whatsappUrl = '#';
 			margin: 0 auto;
 		}
 
+		.how-works-grid {
+			grid-template-columns: 1fr;
+			max-width: 480px;
+			margin: 0 auto 3rem;
+		}
+
+		.how-highlight {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+
 		.footer-inner {
 			flex-direction: column;
 			gap: 0.5rem;
@@ -1192,7 +1343,8 @@ const whatsappUrl = '#';
 		.info-section,
 		.steps-section,
 		.community-section,
-		.cta-section {
+		.cta-section,
+		.how-works-section {
 			padding: 3rem 0;
 		}
 
@@ -1206,6 +1358,22 @@ const whatsappUrl = '#';
 
 		.arrow-icon {
 			display: none;
+		}
+
+		.how-works-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.how-highlight {
+			padding: 1.5rem;
+		}
+
+		.how-card h3 {
+			font-size: 0.95rem;
+		}
+
+		.how-card p {
+			font-size: 0.85rem;
 		}
 	}
 </style>
