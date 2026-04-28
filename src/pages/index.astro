@@ -1,0 +1,1505 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const instagramUrl = 'https://www.instagram.com/unibus2026/';
+const apkUrl = '/downloads/unibus.apk';
+---
+
+<Layout>
+	<!-- ========== NAVBAR ========== -->
+	<nav class="navbar">
+		<div class="nav-inner">
+			<div class="nav-left">
+				<a href="/" class="nav-logo">Unibus</a>
+				<span class="nav-badge">Beta</span>
+			</div>
+			<div class="nav-right">
+				<button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+					<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+					<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+				</button>
+				<a class="nav-icon" href={instagramUrl} aria-label="Instagram" target="_blank" rel="noopener">
+					<svg viewBox="0 0 24 24" fill="none"><path d="M12 0C8.741 0 8.333.014 7.053.072 5.775.131 4.903.333 4.14.63a5.88 5.88 0 0 0-2.126 1.384A5.88 5.88 0 0 0 .63 4.14C.333 4.903.131 5.775.072 7.053.014 8.333 0 8.741 0 12s.014 3.668.072 4.948c.059 1.277.261 2.149.558 2.912a5.88 5.88 0 0 0 1.384 2.126A5.88 5.88 0 0 0 4.14 23.37c.763.297 1.635.499 2.913.558C8.333 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.277-.059 2.149-.261 2.912-.558a5.88 5.88 0 0 0 2.126-1.384 5.88 5.88 0 0 0 1.384-2.126c.297-.763.499-1.635.558-2.913C23.986 15.668 24 15.259 24 12s-.014-3.668-.072-4.948c-.059-1.277-.261-2.149-.558-2.912a5.88 5.88 0 0 0-1.384-2.126A5.88 5.88 0 0 0 19.86.63C19.097.333 18.225.131 16.947.072 15.667.014 15.259 0 12 0Zm0 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.805.249 2.228.414.56.217.96.477 1.38.896.42.42.679.82.896 1.38.165.423.36 1.058.414 2.228.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.849c-.054 1.17-.249 1.805-.414 2.228a3.72 3.72 0 0 1-.896 1.38 3.72 3.72 0 0 1-1.38.896c-.423.165-1.058.36-2.228.414-1.266.058-1.646.07-4.85.07s-3.584-.012-4.849-.07c-1.17-.054-1.805-.249-2.228-.414a3.72 3.72 0 0 1-1.38-.896 3.72 3.72 0 0 1-.896-1.38c-.165-.423-.36-1.058-.414-2.228-.058-1.265-.07-1.645-.07-4.85s.012-3.583.07-4.849c.054-1.17.249-1.805.414-2.228.217-.56.477-.96.896-1.38a3.72 3.72 0 0 1 1.38-.896c.423-.165 1.058-.36 2.228-.414C8.417 2.175 8.797 2.163 12 2.163Zm0 3.675a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.406-10.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881Z" fill="currentColor"/></svg>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<!-- ========== HERO ========== -->
+	<main>
+		<section class="hero">
+			<div class="container hero-grid">
+				<div class="hero-copy">
+					<span class="eyebrow">Beta universitaria</span>
+					<h1>Prueba Unibus<br/>antes que nadie</h1>
+					<p class="subtitle">
+						Descarga la app, conoce tu ruta y acompananos durante el
+						periodo de prueba inicial dentro de la universidad.
+						Solo Android. Instalacion directa desde esta pagina.
+					</p>
+					<div class="hero-actions">
+						<a class="btn btn-primary" href={apkUrl} download="unibus.apk">
+							<svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 2.476l1.596-2.767a.3.3 0 0 0-.118-.407.3.3 0 0 0-.407.118L17 2.209A8.142 8.142 0 0 0 12 .827c-1.845 0-3.542.526-5 1.382L5.406-.578a.3.3 0 0 0-.407-.118.3.3 0 0 0-.118.407l1.596 2.767C3.69 4.456 1.643 7.576 1.395 11.25h21.21c-.248-3.674-2.296-6.794-5.082-8.774ZM7.5 8.25a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm9 0a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM1.29 12.75v7.5a1.5 1.5 0 0 0 3 0v-7.5h15.42v7.5a1.5 1.5 0 0 0 3 0v-7.5h-21.42Z"/></svg>
+							Descargar APK
+						</a>
+					</div>
+					<p class="stores-note">Proximamente en Play Store y App Store</p>
+				</div>
+
+				<div class="hero-phone">
+					<div class="phone-frame">
+						<div class="phone-notch"></div>
+						<div class="phone-screen">
+							<!-- Status bar -->
+							<div class="screen-status">
+								<span>9:41</span>
+								<div class="status-icons">
+									<svg viewBox="0 0 16 16" fill="currentColor" width="14" height="14"><path d="M1 12.5l3-6 3 6M1.75 11h4.5M11 5v8M14 8v5"/></svg>
+									<svg viewBox="0 0 16 16" fill="currentColor" width="14" height="14"><rect x="1" y="6" width="3" height="8" rx="0.5"/><rect x="5.5" y="4" width="3" height="10" rx="0.5"/><rect x="10" y="1" width="3" height="13" rx="0.5"/></svg>
+									<svg viewBox="0 0 20 12" fill="currentColor" width="18" height="11"><rect x="0" y="0" width="18" height="11" rx="2" stroke="currentColor" stroke-width="1" fill="none"/><rect x="18.5" y="3" width="1.5" height="5" rx="0.5"/><rect x="1.5" y="1.5" width="12" height="8" rx="1"/></svg>
+								</div>
+							</div>
+
+							<!-- App header -->
+							<div class="screen-header">
+								<div>
+									<span class="app-name">Unibus</span>
+									<span class="app-mode">Mapa en vivo</span>
+								</div>
+								<div class="header-dot"></div>
+							</div>
+
+							<!-- Live map -->
+							<div class="map-card">
+								<div class="map-toolbar">
+									<span class="map-pill map-pill-active">Autobuses</span>
+									<span class="map-pill">Alumnos</span>
+								</div>
+								<div class="map-canvas">
+									<div class="map-road road-one"></div>
+									<div class="map-road road-two"></div>
+									<div class="map-road road-three"></div>
+									<div class="map-road road-four"></div>
+									<div class="map-park park-one"></div>
+									<div class="map-park park-two"></div>
+									<div class="map-pin pin-student pin-a"></div>
+									<div class="map-pin pin-student pin-b"></div>
+									<div class="map-pin pin-student pin-c"></div>
+									<div class="map-pin pin-student pin-d"></div>
+									<div class="map-pin pin-student pin-e"></div>
+									<div class="map-pin pin-bus pin-f"></div>
+									<div class="map-pin pin-bus pin-g"></div>
+									<div class="map-pin pin-bus pin-h"></div>
+									<div class="user-pulse">
+										<div class="user-pulse-ring"></div>
+										<div class="user-pulse-core"></div>
+									</div>
+									<div class="map-locate">
+										<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 18-7-4-7 4 7-18z"/></svg>
+									</div>
+								</div>
+								<div class="map-legend">
+									<span><i class="legend-dot legend-bus"></i> Autobuses</span>
+									<span><i class="legend-dot legend-student"></i> Alumnos</span>
+								</div>
+							</div>
+
+							<!-- Nav bar -->
+							<div class="screen-nav">
+								<div class="nav-item active">
+									<svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+								</div>
+								<div class="nav-item">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+								</div>
+								<div class="nav-item">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>
+								</div>
+								<div class="nav-item">
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== INFO CARDS ========== -->
+		<section class="info-section">
+			<div class="container">
+				<div class="info-grid">
+					<div class="info-card">
+						<div class="info-icon">
+							<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 2.476l1.596-2.767a.3.3 0 0 0-.525-.289L17 2.209A8.142 8.142 0 0 0 12 .827c-1.845 0-3.542.526-5 1.382L5.406-.578a.3.3 0 0 0-.525.289l1.596 2.767C3.69 4.456 1.643 7.576 1.395 11.25h21.21c-.248-3.674-2.296-6.794-5.082-8.774ZM7.5 8.25a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm9 0a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM1.29 12.75v7.5a1.5 1.5 0 0 0 3 0v-7.5h15.42v7.5a1.5 1.5 0 0 0 3 0v-7.5h-21.42Z"/></svg>
+						</div>
+						<h3>Solo Android</h3>
+						<p>La beta esta disponible unicamente para dispositivos Android.</p>
+					</div>
+					<div class="info-card">
+						<div class="info-icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><rect x="7" y="14" width="3" height="3" rx="0.5" fill="currentColor" stroke="none"/></svg>
+						</div>
+						<h3>Periodo de prueba</h3>
+						<p>Fase inicial de validacion dentro de la universidad.</p>
+					</div>
+					<div class="info-card">
+						<div class="info-icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+						</div>
+						<h3>Descarga directa</h3>
+						<p>Instala el APK desde esta pagina. Sin tienda, sin complicaciones.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== COMO PARTICIPAR ========== -->
+		<section class="steps-section">
+			<div class="container">
+				<h2 class="section-title">Como participar</h2>
+				<div class="steps-grid">
+					<div class="step-card">
+						<div class="step-number">1</div>
+						<h3>Descarga el APK</h3>
+						<p>Toca el boton de descarga en esta pagina desde tu celular Android.</p>
+					</div>
+					<div class="step-divider"></div>
+					<div class="step-card">
+						<div class="step-number">2</div>
+						<h3>Instala la app</h3>
+						<p>Abre el archivo descargado y permite la instalacion desde fuentes externas.</p>
+					</div>
+					<div class="step-divider"></div>
+					<div class="step-card">
+						<div class="step-number">3</div>
+						<h3>Prueba y opina</h3>
+						<p>Usala durante la beta y comparte tu experiencia con nosotros.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== COMUNIDAD ========== -->
+		<section class="community-section">
+			<div class="container">
+				<h2 class="section-title">Queremos escucharte</h2>
+				<p class="section-subtitle">
+					Tu opinion es clave para mejorar Unibus. Conecta con nosotros durante la beta.
+				</p>
+				<div class="community-grid">
+					<a class="community-card card-instagram" href={instagramUrl} target="_blank" rel="noopener">
+						<div class="community-icon">
+							<svg viewBox="0 0 24 24" fill="none"><path d="M12 0C8.741 0 8.333.014 7.053.072 5.775.131 4.903.333 4.14.63a5.88 5.88 0 0 0-2.126 1.384A5.88 5.88 0 0 0 .63 4.14C.333 4.903.131 5.775.072 7.053.014 8.333 0 8.741 0 12s.014 3.668.072 4.948c.059 1.277.261 2.149.558 2.912a5.88 5.88 0 0 0 1.384 2.126A5.88 5.88 0 0 0 4.14 23.37c.763.297 1.635.499 2.913.558C8.333 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.277-.059 2.149-.261 2.912-.558a5.88 5.88 0 0 0 2.126-1.384 5.88 5.88 0 0 0 1.384-2.126c.297-.763.499-1.635.558-2.913C23.986 15.668 24 15.259 24 12s-.014-3.668-.072-4.948c-.059-1.277-.261-2.149-.558-2.912a5.88 5.88 0 0 0-1.384-2.126A5.88 5.88 0 0 0 19.86.63C19.097.333 18.225.131 16.947.072 15.667.014 15.259 0 12 0Zm0 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.805.249 2.228.414.56.217.96.477 1.38.896.42.42.679.82.896 1.38.165.423.36 1.058.414 2.228.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.849c-.054 1.17-.249 1.805-.414 2.228a3.72 3.72 0 0 1-.896 1.38 3.72 3.72 0 0 1-1.38.896c-.423.165-1.058.36-2.228.414-1.266.058-1.646.07-4.85.07s-3.584-.012-4.849-.07c-1.17-.054-1.805-.249-2.228-.414a3.72 3.72 0 0 1-1.38-.896 3.72 3.72 0 0 1-.896-1.38c-.165-.423-.36-1.058-.414-2.228-.058-1.265-.07-1.645-.07-4.85s.012-3.583.07-4.849c.054-1.17.249-1.805.414-2.228.217-.56.477-.96.896-1.38a3.72 3.72 0 0 1 1.38-.896c.423-.165 1.058-.36 2.228-.414C8.417 2.175 8.797 2.163 12 2.163Zm0 3.675a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.406-10.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881Z" fill="currentColor"/></svg>
+						</div>
+						<div>
+							<h3>Siguenos en Instagram</h3>
+							<p>Novedades, actualizaciones, soporte y contenido de la beta.</p>
+						</div>
+						<svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== CTA FINAL ========== -->
+		<section class="cta-section">
+			<div class="container cta-inner">
+				<h2>Listo para probar Unibus?</h2>
+				<p>Descarga ahora e instala la app antes de que inicie la beta.</p>
+				<a class="btn btn-primary btn-lg" href={apkUrl} download="unibus.apk">
+					<svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 2.476l1.596-2.767a.3.3 0 0 0-.525-.289L17 2.209A8.142 8.142 0 0 0 12 .827c-1.845 0-3.542.526-5 1.382L5.406-.578a.3.3 0 0 0-.525.289l1.596 2.767C3.69 4.456 1.643 7.576 1.395 11.25h21.21c-.248-3.674-2.296-6.794-5.082-8.774ZM7.5 8.25a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm9 0a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM1.29 12.75v7.5a1.5 1.5 0 0 0 3 0v-7.5h15.42v7.5a1.5 1.5 0 0 0 3 0v-7.5h-21.42Z"/></svg>
+					Descargar APK
+				</a>
+			</div>
+		</section>
+
+		<!-- ========== COMO FUNCIONA ========== -->
+		<section class="how-works-section">
+			<div class="container">
+				<h2 class="section-title">Cómo funciona</h2>
+				<p class="section-subtitle">
+					Los alumnos son clave para Unibus. Tu participación ayuda a detectar la ubicación del autobús.
+				</p>
+				<div class="how-works-grid">
+					<div class="how-card">
+						<div class="how-icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>
+						</div>
+						<h3>Descarga la app</h3>
+						<p>Instala Unibus en tu celular Android durante la beta universitaria.</p>
+					</div>
+					<div class="how-card">
+						<div class="how-icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+						</div>
+						<h3>Activa los permisos</h3>
+						<p>Autoriza el acceso a tu ubicación. Sin esto, no podemos detectar el autobús.</p>
+					</div>
+					<div class="how-card">
+						<div class="how-icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+						</div>
+						<h3>Compartimos datos</h3>
+						<p>Analizamos las geoposiciones de los alumnos para calcular dónde está el Unibus en tiempo real.</p>
+					</div>
+				</div>
+				<div class="how-highlight">
+					<div class="highlight-icon">
+						<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+					</div>
+					<div>
+						<h4>Tu participación es esencial</h4>
+						<p>Cada alumno que acepta los permisos mejora la precisión de Unibus. Juntos hacemos que el sistema funcione.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- ========== FOOTER ========== -->
+	<footer class="footer">
+		<div class="container footer-inner">
+			<div class="footer-left">
+				<span class="footer-logo">Unibus</span>
+				<span class="footer-sep">&bull;</span>
+				<span>Beta universitaria 2026</span>
+			</div>
+			<p class="footer-tagline">Hecho para estudiantes</p>
+		</div>
+	</footer>
+</Layout>
+
+<!-- ========== THEME TOGGLE SCRIPT ========== -->
+<script>
+	const toggle = document.getElementById('themeToggle');
+	const html = document.documentElement;
+
+	// Check saved preference or default to dark
+	const saved = localStorage.getItem('unibus-theme');
+	if (saved === 'light') {
+		html.classList.add('light');
+	}
+
+	toggle?.addEventListener('click', () => {
+		html.classList.toggle('light');
+		localStorage.setItem('unibus-theme', html.classList.contains('light') ? 'light' : 'dark');
+	});
+</script>
+
+<style>
+	/* ===========================
+	   DESIGN TOKENS — DARK (default)
+	   =========================== */
+	:root {
+		--bg: #0a0f1a;
+		--bg-subtle: #111827;
+		--surface: rgba(255, 255, 255, 0.04);
+		--surface-hover: rgba(255, 255, 255, 0.07);
+		--surface-border: rgba(255, 255, 255, 0.08);
+		--text: #f0f2f5;
+		--text-muted: rgba(255, 255, 255, 0.5);
+		--accent: #4e7aff;
+		--accent-hover: #6b91ff;
+		--accent-glow: rgba(78, 122, 255, 0.15);
+		--accent-soft: rgba(78, 122, 255, 0.08);
+		--green: #34d399;
+		--orange: #f07a1f;
+		--radius-sm: 0.75rem;
+		--radius-md: 1.25rem;
+		--radius-lg: 1.75rem;
+		--radius-full: 999px;
+		--shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+		--nav-bg: rgba(10, 15, 26, 0.8);
+	}
+
+	/* ===========================
+	   DESIGN TOKENS — LIGHT
+	   =========================== */
+	:global(html.light) {
+		--bg: #f0f4f8;
+		--bg-subtle: #ffffff;
+		--surface: rgba(255, 255, 255, 0.7);
+		--surface-hover: rgba(255, 255, 255, 0.9);
+		--surface-border: rgba(16, 20, 24, 0.1);
+		--text: #101418;
+		--text-muted: #586775;
+		--accent: #0c4a8a;
+		--accent-hover: #0d5fad;
+		--accent-glow: rgba(12, 74, 138, 0.1);
+		--accent-soft: rgba(12, 74, 138, 0.06);
+		--green: #16a34a;
+		--orange: #ea6a0e;
+		--shadow: 0 24px 60px rgba(12, 27, 43, 0.12);
+		--nav-bg: rgba(240, 244, 248, 0.85);
+	}
+
+	/* ===========================
+	   BASE
+	   =========================== */
+	:global(body) {
+		background: var(--bg);
+		color: var(--text);
+		position: relative;
+		z-index: 1;
+	}
+
+	/* Background decoration */
+	:global(body)::before {
+		content: '';
+		position: fixed;
+		inset: 0;
+		z-index: 0;
+		background:
+			radial-gradient(ellipse 60% 50% at 10% 0%, rgba(78, 122, 255, 0.12), transparent),
+			radial-gradient(ellipse 50% 40% at 90% 10%, rgba(139, 92, 246, 0.08), transparent),
+			radial-gradient(ellipse 40% 30% at 50% 100%, rgba(78, 122, 255, 0.06), transparent);
+		pointer-events: none;
+	}
+
+	:global(html.light body)::before {
+		background:
+			radial-gradient(ellipse 60% 50% at 10% 0%, rgba(12, 74, 138, 0.08), transparent),
+			radial-gradient(ellipse 50% 40% at 90% 10%, rgba(240, 122, 31, 0.06), transparent),
+			radial-gradient(ellipse 40% 30% at 50% 100%, rgba(12, 74, 138, 0.04), transparent);
+	}
+
+	.container {
+		max-width: 1140px;
+		margin: 0 auto;
+		padding: 0 1.5rem;
+	}
+
+	/* ===========================
+	   NAVBAR
+	   =========================== */
+	.navbar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 100;
+		background: var(--nav-bg);
+		backdrop-filter: blur(20px);
+		-webkit-backdrop-filter: blur(20px);
+		border-bottom: 1px solid var(--surface-border);
+	}
+
+	.nav-inner {
+		max-width: 1140px;
+		margin: 0 auto;
+		padding: 0 1.5rem;
+		height: 64px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.nav-left {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+	}
+
+	.nav-logo {
+		font-size: 1.35rem;
+		font-weight: 800;
+		text-decoration: none;
+		letter-spacing: -0.03em;
+	}
+
+	.nav-badge {
+		padding: 0.2rem 0.6rem;
+		border-radius: var(--radius-full);
+		background: var(--accent-soft);
+		border: 1px solid var(--accent);
+		color: var(--accent);
+		font-size: 0.68rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+	}
+
+	.nav-right {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.theme-toggle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 38px;
+		height: 38px;
+		border-radius: 50%;
+		border: 1px solid var(--surface-border);
+		background: var(--surface);
+		color: var(--text-muted);
+		cursor: pointer;
+		transition: all 180ms ease;
+	}
+
+	.theme-toggle:hover {
+		background: var(--surface-hover);
+		color: var(--text);
+	}
+
+	.theme-toggle svg {
+		width: 18px;
+		height: 18px;
+	}
+
+	/* Dark mode: show sun, hide moon */
+	.icon-moon { display: none; }
+	.icon-sun { display: block; }
+
+	/* Light mode: show moon, hide sun */
+	:global(html.light) .icon-sun { display: none; }
+	:global(html.light) .icon-moon { display: block; }
+
+	.nav-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 38px;
+		height: 38px;
+		border-radius: 50%;
+		border: 1px solid var(--surface-border);
+		background: var(--surface);
+		color: var(--text-muted);
+		text-decoration: none;
+		transition: all 180ms ease;
+	}
+
+	.nav-icon:hover {
+		background: var(--surface-hover);
+		color: var(--text);
+	}
+
+	.nav-icon svg {
+		width: 16px;
+		height: 16px;
+	}
+
+	/* ===========================
+	   HERO
+	   =========================== */
+	.hero {
+		padding: calc(64px + 4rem) 0 4rem;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+	}
+
+	.hero-grid {
+		display: grid;
+		grid-template-columns: 1.1fr 0.9fr;
+		gap: 3rem;
+		align-items: center;
+	}
+
+	.eyebrow {
+		display: inline-block;
+		padding: 0.5rem 1rem;
+		border-radius: var(--radius-full);
+		background: var(--accent-soft);
+		border: 1px solid rgba(78, 122, 255, 0.2);
+		color: var(--accent);
+		font-size: 0.75rem;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		margin-bottom: 1.5rem;
+	}
+
+	:global(html.light) .eyebrow {
+		border-color: rgba(12, 74, 138, 0.15);
+	}
+
+	h1 {
+		font-size: clamp(2.75rem, 5.5vw, 4.5rem);
+		font-weight: 800;
+		line-height: 1.05;
+		letter-spacing: -0.04em;
+		margin-bottom: 1.5rem;
+	}
+
+	.subtitle {
+		font-size: 1.1rem;
+		line-height: 1.75;
+		color: var(--text-muted);
+		max-width: 520px;
+		margin-bottom: 2rem;
+	}
+
+	.hero-actions {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+	}
+
+	.btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5rem;
+		padding: 0.9rem 1.6rem;
+		border-radius: var(--radius-full);
+		font-weight: 700;
+		font-size: 0.95rem;
+		text-decoration: none;
+		border: none;
+		cursor: pointer;
+		transition: all 200ms ease;
+	}
+
+	.btn-icon {
+		width: 20px;
+		height: 20px;
+	}
+
+	.btn-primary {
+		background: var(--accent);
+		color: #fff;
+		box-shadow: 0 8px 32px var(--accent-glow), 0 2px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-primary:hover {
+		background: var(--accent-hover);
+		transform: translateY(-2px);
+		box-shadow: 0 12px 40px var(--accent-glow), 0 4px 12px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-lg {
+		padding: 1.1rem 2rem;
+		font-size: 1.05rem;
+	}
+
+	.stores-note {
+		margin-top: 1rem;
+		font-size: 0.85rem;
+		color: var(--text-muted);
+	}
+
+	/* ===========================
+	   PHONE MOCKUP
+	   =========================== */
+	.hero-phone {
+		display: flex;
+		justify-content: center;
+	}
+
+	.phone-frame {
+		width: 280px;
+		background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+		border-radius: 2.5rem;
+		padding: 0.6rem;
+		box-shadow:
+			0 0 0 1px rgba(255, 255, 255, 0.1),
+			var(--shadow),
+			0 0 80px rgba(78, 122, 255, 0.08);
+		position: relative;
+	}
+
+	:global(html.light) .phone-frame {
+		background: linear-gradient(180deg, #e2e8f0 0%, #cbd5e1 100%);
+		box-shadow:
+			0 0 0 1px rgba(0, 0, 0, 0.08),
+			var(--shadow),
+			0 0 80px rgba(12, 74, 138, 0.06);
+	}
+
+	.phone-notch {
+		width: 100px;
+		height: 24px;
+		background: #0a0f1a;
+		border-radius: 0 0 1rem 1rem;
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+		top: -0.6rem;
+		margin-bottom: -0.6rem;
+	}
+
+	:global(html.light) .phone-notch {
+		background: #d1d5db;
+	}
+
+	.phone-screen {
+		background: #0f172a;
+		border-radius: 2rem;
+		padding: 1rem 0.9rem 0.6rem;
+		min-height: 520px;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	:global(html.light) .phone-screen {
+		background: #f8fafc;
+	}
+
+	.screen-status {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 0.25rem 0.6rem;
+		font-size: 0.72rem;
+		font-weight: 600;
+		color: rgba(255, 255, 255, 0.7);
+	}
+
+	:global(html.light) .screen-status {
+		color: rgba(0, 0, 0, 0.5);
+	}
+
+	.status-icons {
+		display: flex;
+		gap: 0.35rem;
+		align-items: center;
+		opacity: 0.6;
+	}
+
+	.screen-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.5rem 0.25rem 0.8rem;
+	}
+
+	.screen-header > div:first-child {
+		display: flex;
+		flex-direction: column;
+		gap: 0.15rem;
+	}
+
+	.app-name {
+		font-size: 1.2rem;
+		font-weight: 800;
+		color: #fff;
+		letter-spacing: -0.02em;
+	}
+
+	.app-mode {
+		font-size: 0.68rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--text-muted);
+		font-weight: 700;
+	}
+
+	:global(html.light) .app-name {
+		color: #0f172a;
+	}
+
+	.header-dot {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: var(--accent);
+		box-shadow: 0 0 8px var(--accent);
+	}
+
+	.map-card {
+		background: rgba(255, 255, 255, 0.06);
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		border-radius: 1rem;
+		padding: 0.9rem;
+		margin-bottom: 0.7rem;
+	}
+
+	:global(html.light) .map-card {
+		background: #fff;
+		border-color: #e2e8f0;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+	}
+
+	.map-toolbar {
+		display: flex;
+		gap: 0.45rem;
+		margin-bottom: 0.8rem;
+	}
+
+	.map-pill {
+		padding: 0.28rem 0.6rem;
+		border-radius: var(--radius-full);
+		background: rgba(255, 255, 255, 0.04);
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		font-size: 0.63rem;
+		font-weight: 700;
+		color: var(--text-muted);
+	}
+
+	.map-pill-active {
+		background: var(--accent-soft);
+		border-color: rgba(78, 122, 255, 0.25);
+		color: var(--accent);
+	}
+
+	:global(html.light) .map-pill {
+		background: #f8fafc;
+		border-color: #e2e8f0;
+	}
+
+	.map-canvas {
+		position: relative;
+		height: 214px;
+		border-radius: 1rem;
+		overflow: hidden;
+		background:
+			radial-gradient(circle at 50% 50%, rgba(78, 122, 255, 0.18), transparent 32%),
+			linear-gradient(180deg, #1a2238 0%, #111a2f 100%);
+		border: 1px solid rgba(78, 122, 255, 0.12);
+	}
+
+	:global(html.light) .map-canvas {
+		background:
+			radial-gradient(circle at 50% 50%, rgba(78, 122, 255, 0.08), transparent 30%),
+			linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%);
+		border-color: rgba(148, 163, 184, 0.2);
+	}
+
+	.map-road {
+		position: absolute;
+		background: rgba(228, 235, 248, 0.88);
+		border: 1px solid rgba(180, 194, 220, 0.45);
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+		opacity: 0.9;
+	}
+
+	:global(html.light) .map-road {
+		background: rgba(255, 255, 255, 0.9);
+		border-color: rgba(203, 213, 225, 0.7);
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+		opacity: 1;
+	}
+
+	.road-one {
+		width: 120%;
+		height: 14px;
+		top: 42%;
+		left: -8%;
+		transform: rotate(-16deg);
+	}
+
+	.road-two {
+		width: 105%;
+		height: 14px;
+		top: 18%;
+		left: -2%;
+		transform: rotate(8deg);
+	}
+
+	.road-three {
+		width: 14px;
+		height: 120%;
+		top: -8%;
+		left: 58%;
+		transform: rotate(12deg);
+	}
+
+	.road-four {
+		width: 14px;
+		height: 85%;
+		top: 12%;
+		left: 23%;
+		transform: rotate(-8deg);
+	}
+
+	.map-park {
+		position: absolute;
+		background: rgba(120, 176, 72, 0.24);
+		border-radius: 999px;
+		box-shadow: inset 0 0 0 1px rgba(190, 242, 100, 0.08);
+	}
+
+	:global(html.light) .map-park {
+		background: rgba(190, 242, 100, 0.28);
+		box-shadow: none;
+	}
+
+	.park-one {
+		width: 46px;
+		height: 26px;
+		top: 14%;
+		left: 9%;
+	}
+
+	.park-two {
+		width: 42px;
+		height: 24px;
+		bottom: 18%;
+		right: 14%;
+	}
+
+	.map-pin {
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		border-radius: 50% 50% 50% 8%;
+		transform: rotate(-45deg);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 8px 18px rgba(15, 23, 42, 0.15);
+	}
+
+	.map-pin::before {
+		content: '';
+		width: 9px;
+		height: 9px;
+		border-radius: 50%;
+		background: #fff;
+		transform: rotate(45deg);
+	}
+
+	.pin-student {
+		background: #0c4a8a;
+	}
+
+	.pin-bus {
+		background: #ea6a0e;
+	}
+
+	.pin-a { top: 14%; left: 13%; }
+	.pin-b { top: 12%; right: 18%; }
+	.pin-c { top: 42%; left: 22%; }
+	.pin-d { top: 55%; right: 20%; }
+	.pin-e { bottom: 17%; left: 16%; }
+	.pin-f { top: 28%; left: 62%; }
+	.pin-g { top: 58%; left: 48%; }
+	.pin-h { bottom: 11%; right: 9%; }
+
+	.user-pulse {
+		position: absolute;
+		top: 43%;
+		left: 49%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.user-pulse-ring {
+		position: absolute;
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		background: rgba(78, 122, 255, 0.14);
+	}
+
+	.user-pulse-core {
+		position: relative;
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		background: var(--accent);
+		border: 3px solid rgba(255, 255, 255, 0.95);
+		box-shadow: 0 0 0 6px rgba(78, 122, 255, 0.12);
+	}
+
+	.map-locate {
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		width: 28px;
+		height: 28px;
+		border-radius: 50%;
+		background: rgba(15, 23, 42, 0.88);
+		border: 1px solid rgba(148, 163, 184, 0.18);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #ea6a0e;
+		box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+	}
+
+	:global(html.light) .map-locate {
+		background: rgba(255, 255, 255, 0.92);
+		border-color: transparent;
+	}
+
+	.map-locate svg {
+		width: 13px;
+		height: 13px;
+	}
+
+	.map-legend {
+		display: flex;
+		justify-content: space-between;
+		gap: 0.75rem;
+		padding-top: 0.7rem;
+		font-size: 0.68rem;
+		color: var(--text-muted);
+	}
+
+	.map-legend span {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+	}
+
+	.legend-dot {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		display: inline-block;
+	}
+
+	.legend-bus { background: #ea6a0e; }
+	.legend-student { background: #0c4a8a; }
+
+	/* Phone bottom nav */
+	.screen-nav {
+		display: flex;
+		justify-content: space-around;
+		padding: 0.65rem 0 0.2rem;
+		margin-top: 0.8rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.06);
+	}
+
+	:global(html.light) .screen-nav {
+		border-top-color: #e2e8f0;
+	}
+
+	.nav-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+		color: rgba(255, 255, 255, 0.3);
+		transition: all 150ms ease;
+	}
+
+	:global(html.light) .nav-item {
+		color: rgba(0, 0, 0, 0.25);
+	}
+
+	.nav-item.active {
+		color: var(--accent);
+		background: var(--accent-soft);
+	}
+
+	/* ===========================
+	   INFO CARDS
+	   =========================== */
+	.info-section {
+		padding: 5rem 0;
+	}
+
+	.info-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.25rem;
+	}
+
+	.info-card {
+		background: var(--surface);
+		border: 1px solid var(--surface-border);
+		border-radius: var(--radius-md);
+		padding: 1.75rem;
+		transition: all 250ms ease;
+	}
+
+	.info-card:hover {
+		background: var(--surface-hover);
+		transform: translateY(-2px);
+	}
+
+	.info-icon {
+		width: 44px;
+		height: 44px;
+		border-radius: 12px;
+		background: var(--accent-soft);
+		border: 1px solid rgba(78, 122, 255, 0.15);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 1.25rem;
+		color: var(--accent);
+	}
+
+	.info-icon svg {
+		width: 22px;
+		height: 22px;
+	}
+
+	.info-card h3 {
+		font-size: 1.05rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.info-card p {
+		font-size: 0.92rem;
+		line-height: 1.6;
+		color: var(--text-muted);
+	}
+
+	/* ===========================
+	   STEPS
+	   =========================== */
+	.steps-section {
+		padding: 4rem 0 5rem;
+	}
+
+	.section-title {
+		font-size: clamp(1.75rem, 3vw, 2.25rem);
+		font-weight: 800;
+		letter-spacing: -0.03em;
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.steps-grid {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 0;
+	}
+
+	.step-card {
+		flex: 1;
+		max-width: 300px;
+		text-align: center;
+		padding: 0 1.5rem;
+	}
+
+	.step-number {
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background: var(--accent);
+		color: #fff;
+		font-size: 1.15rem;
+		font-weight: 800;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto 1.25rem;
+		box-shadow: 0 4px 20px var(--accent-glow);
+	}
+
+	.step-card h3 {
+		font-size: 1.05rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.step-card p {
+		font-size: 0.92rem;
+		line-height: 1.6;
+		color: var(--text-muted);
+	}
+
+	.step-divider {
+		width: 60px;
+		height: 1px;
+		background: var(--surface-border);
+		margin-top: 24px;
+		flex-shrink: 0;
+	}
+
+	/* ===========================
+	   COMMUNITY
+	   =========================== */
+	.community-section {
+		padding: 4rem 0 5rem;
+	}
+
+	.section-subtitle {
+		text-align: center;
+		color: var(--text-muted);
+		font-size: 1.05rem;
+		line-height: 1.7;
+		max-width: 480px;
+		margin: -1.5rem auto 2.5rem;
+	}
+
+	.community-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1.25rem;
+		max-width: 480px;
+		margin: 0 auto;
+	}
+
+	.community-card {
+		display: flex;
+		align-items: center;
+		gap: 1.25rem;
+		background: var(--surface);
+		border: 1px solid var(--surface-border);
+		border-radius: var(--radius-md);
+		padding: 1.5rem;
+		text-decoration: none;
+		transition: all 250ms ease;
+	}
+
+	.community-card:hover {
+		background: var(--surface-hover);
+		transform: translateY(-2px);
+	}
+
+	.community-icon {
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+	}
+
+	.community-icon svg {
+		width: 22px;
+		height: 22px;
+	}
+
+	.card-instagram .community-icon {
+		background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7);
+		color: #fff;
+	}
+
+	.card-whatsapp .community-icon {
+		background: #25d366;
+		color: #fff;
+	}
+
+	.community-card h3 {
+		font-size: 0.95rem;
+		font-weight: 700;
+		margin-bottom: 0.25rem;
+	}
+
+	.community-card p {
+		font-size: 0.85rem;
+		color: var(--text-muted);
+		line-height: 1.5;
+	}
+
+	.arrow-icon {
+		width: 20px;
+		height: 20px;
+		color: var(--text-muted);
+		margin-left: auto;
+		flex-shrink: 0;
+		transition: transform 200ms ease;
+	}
+
+	.community-card:hover .arrow-icon {
+		transform: translateX(4px);
+		color: var(--text);
+	}
+
+	/* ===========================
+	   CTA FINAL
+	   =========================== */
+	.cta-section {
+		padding: 4rem 0 5rem;
+	}
+
+	.cta-inner {
+		text-align: center;
+		background: var(--surface);
+		border: 1px solid var(--surface-border);
+		border-radius: var(--radius-lg);
+		padding: 3.5rem 2rem;
+	}
+
+	.cta-inner h2 {
+		font-size: clamp(1.5rem, 3vw, 2rem);
+		font-weight: 800;
+		letter-spacing: -0.03em;
+		margin-bottom: 0.75rem;
+	}
+
+	.cta-inner p {
+		color: var(--text-muted);
+		font-size: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	/* ===========================
+	   HOW IT WORKS
+	   =========================== */
+	.how-works-section {
+		padding: 4rem 0 5rem;
+	}
+
+	.how-works-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1.5rem;
+		margin-bottom: 3rem;
+	}
+
+	.how-card {
+		text-align: center;
+		padding: 1.5rem;
+		border-radius: var(--radius-md);
+		background: var(--surface);
+		border: 1px solid var(--surface-border);
+		transition: all 250ms ease;
+	}
+
+	.how-card:hover {
+		background: var(--surface-hover);
+		transform: translateY(-4px);
+	}
+
+	.how-icon {
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		background: var(--accent-soft);
+		border: 2px solid var(--accent);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto 1rem;
+		color: var(--accent);
+	}
+
+	.how-icon svg {
+		width: 28px;
+		height: 28px;
+	}
+
+	.how-card h3 {
+		font-size: 1.05rem;
+		font-weight: 700;
+		margin-bottom: 0.75rem;
+	}
+
+	.how-card p {
+		font-size: 0.9rem;
+		line-height: 1.6;
+		color: var(--text-muted);
+	}
+
+	.how-highlight {
+		display: flex;
+		align-items: flex-start;
+		gap: 1.5rem;
+		background: var(--accent-soft);
+		border: 1px solid var(--accent);
+		border-radius: var(--radius-md);
+		padding: 2rem;
+	}
+
+	.highlight-icon {
+		width: 48px;
+		height: 48px;
+		min-width: 48px;
+		border-radius: 50%;
+		background: var(--accent);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+	}
+
+	.highlight-icon svg {
+		width: 24px;
+		height: 24px;
+	}
+
+	.how-highlight h4 {
+		font-size: 1.05rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.how-highlight p {
+		font-size: 0.95rem;
+		line-height: 1.6;
+		color: var(--text-muted);
+	}
+
+	/* ===========================
+	   FOOTER
+	   =========================== */
+	.footer {
+		border-top: 1px solid var(--surface-border);
+		padding: 2rem 0;
+	}
+
+	.footer-inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.footer-left {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 0.85rem;
+		color: var(--text-muted);
+	}
+
+	.footer-logo {
+		font-weight: 800;
+		color: var(--text);
+		font-size: 0.95rem;
+	}
+
+	.footer-sep {
+		opacity: 0.3;
+	}
+
+	.footer-tagline {
+		font-size: 0.85rem;
+		color: var(--text-muted);
+	}
+
+	/* ===========================
+	   RESPONSIVE
+	   =========================== */
+	@media (max-width: 900px) {
+		.hero-grid {
+			grid-template-columns: 1fr;
+			gap: 3rem;
+			text-align: center;
+		}
+
+		.subtitle {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.hero-actions {
+			justify-content: center;
+		}
+
+		.stores-note {
+			text-align: center;
+		}
+
+		.hero-phone {
+			order: 1;
+		}
+
+		.phone-frame {
+			width: 240px;
+		}
+
+		.phone-screen {
+			min-height: 440px;
+		}
+
+		.info-grid {
+			grid-template-columns: 1fr;
+			max-width: 480px;
+			margin: 0 auto;
+		}
+
+		.steps-grid {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.step-divider {
+			width: 1px;
+			height: 32px;
+			margin: 0;
+		}
+
+		.community-grid {
+			grid-template-columns: 1fr;
+			max-width: 480px;
+			margin: 0 auto;
+		}
+
+		.how-works-grid {
+			grid-template-columns: 1fr;
+			max-width: 480px;
+			margin: 0 auto 3rem;
+		}
+
+		.how-highlight {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+
+		.footer-inner {
+			flex-direction: column;
+			gap: 0.5rem;
+			text-align: center;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.hero {
+			padding-top: calc(64px + 2rem);
+			min-height: auto;
+			padding-bottom: 2rem;
+		}
+
+		h1 {
+			font-size: clamp(2rem, 10vw, 2.75rem);
+		}
+
+		.subtitle {
+			font-size: 1rem;
+		}
+
+		.btn {
+			width: 100%;
+		}
+
+		.phone-frame {
+			width: 220px;
+		}
+
+		.phone-screen {
+			min-height: 400px;
+			padding: 0.8rem 0.7rem 0.5rem;
+		}
+
+		.route-card {
+			padding: 0.75rem;
+		}
+
+		.info-section,
+		.steps-section,
+		.community-section,
+		.cta-section,
+		.how-works-section {
+			padding: 3rem 0;
+		}
+
+		.cta-inner {
+			padding: 2.5rem 1.5rem;
+		}
+
+		.community-card {
+			flex-wrap: wrap;
+		}
+
+		.arrow-icon {
+			display: none;
+		}
+
+		.how-works-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.how-highlight {
+			padding: 1.5rem;
+		}
+
+		.how-card h3 {
+			font-size: 0.95rem;
+		}
+
+		.how-card p {
+			font-size: 0.85rem;
+		}
+	}
+</style>
