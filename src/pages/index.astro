@@ -38,6 +38,10 @@ const apkUrl = 'https://www.dropbox.com/scl/fi/nx9lys5jpw58r86skw4e5/unibus-rele
 						Solo Android. Instalacion directa desde esta pagina.
 					</p>
 					<div class="hero-actions">
+						<a class="btn btn-instagram" href={instagramUrl} target="_blank" rel="noopener">
+							<svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+							Siguenos en Instagram
+						</a>
 						<a class="btn btn-primary" href={apkUrl} download="unibus.apk">
 							<svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 2.476l1.596-2.767a.3.3 0 0 0-.118-.407.3.3 0 0 0-.407.118L17 2.209A8.142 8.142 0 0 0 12 .827c-1.845 0-3.542.526-5 1.382L5.406-.578a.3.3 0 0 0-.407-.118.3.3 0 0 0-.118.407l1.596 2.767C3.69 4.456 1.643 7.576 1.395 11.25h21.21c-.248-3.674-2.296-6.794-5.082-8.774ZM7.5 8.25a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25Zm9 0a1.125 1.125 0 1 1 0-2.25 1.125 1.125 0 0 1 0 2.25ZM1.29 12.75v7.5a1.5 1.5 0 0 0 3 0v-7.5h15.42v7.5a1.5 1.5 0 0 0 3 0v-7.5h-21.42Z"/></svg>
 							Descargar APK
@@ -219,29 +223,29 @@ const apkUrl = 'https://www.dropbox.com/scl/fi/nx9lys5jpw58r86skw4e5/unibus-rele
 			<div class="container">
 				<h2 class="section-title">Cómo funciona</h2>
 				<p class="section-subtitle">
-					Los alumnos son clave para Unibus. Tu participación ayuda a detectar la ubicación del autobús.
+					Unibus depende de la colaboración de todos. Tu participación es lo que hace posible el sistema.
 				</p>
 				<div class="how-works-grid">
 					<div class="how-card">
 						<div class="how-icon">
 							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>
 						</div>
-						<h3>Descarga la app</h3>
-						<p>Instala Unibus en tu celular Android durante la beta universitaria.</p>
+						<h3>Abre la app</h3>
+						<p>Al iniciar Unibus, se activa automáticamente el envío de tu ubicación por un periodo de tiempo.</p>
 					</div>
 					<div class="how-card">
 						<div class="how-icon">
 							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
 						</div>
-						<h3>Activa los permisos</h3>
-						<p>Autoriza el acceso a tu ubicación. Sin esto, no podemos detectar el autobús.</p>
+						<h3>Ya estás cooperando</h3>
+						<p>Con solo tener la app abierta, tu ubicación ayuda a calcular dónde están los autobuses. Cada alumno cuenta.</p>
 					</div>
 					<div class="how-card">
 						<div class="how-icon">
 							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
 						</div>
-						<h3>Compartimos datos</h3>
-						<p>Analizamos las geoposiciones de los alumnos para calcular dónde está el Unibus en tiempo real.</p>
+						<h3>Algoritmos inteligentes</h3>
+						<p>Analizamos las ubicaciones de los alumnos para saber por donde va el autobús en tiempo real.</p>
 					</div>
 				</div>
 				<div class="how-highlight">
@@ -249,8 +253,8 @@ const apkUrl = 'https://www.dropbox.com/scl/fi/nx9lys5jpw58r86skw4e5/unibus-rele
 						<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
 					</div>
 					<div>
-						<h4>Tu participación es esencial</h4>
-						<p>Cada alumno que acepta los permisos mejora la precisión de Unibus. Juntos hacemos que el sistema funcione.</p>
+						<h4>Tu privacidad está protegida</h4>
+						<p>No usamos tu ubicación para otros fines. Solo la necesitamos para calcular la posición de los autobuses mediante algoritmos. La colaboración universitaria es esencial para que Unibus funcione.</p>
 					</div>
 				</div>
 			</div>
@@ -537,6 +541,19 @@ const apkUrl = 'https://www.dropbox.com/scl/fi/nx9lys5jpw58r86skw4e5/unibus-rele
 		display: flex;
 		gap: 1rem;
 		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.btn-instagram {
+		background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7);
+		color: #fff;
+		box-shadow: 0 8px 32px rgba(238, 42, 123, 0.2), 0 2px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-instagram:hover {
+		background: linear-gradient(135deg, #fcd34d, #f43f8c, #7c3aed);
+		transform: translateY(-2px);
+		box-shadow: 0 12px 40px rgba(238, 42, 123, 0.25), 0 4px 12px rgba(0, 0, 0, 0.2);
 	}
 
 	.btn {
@@ -1376,6 +1393,10 @@ const apkUrl = 'https://www.dropbox.com/scl/fi/nx9lys5jpw58r86skw4e5/unibus-rele
 			justify-content: center;
 		}
 
+		.hero-instagram {
+			justify-content: center;
+		}
+
 		.stores-note {
 			text-align: center;
 		}
@@ -1449,8 +1470,21 @@ const apkUrl = 'https://www.dropbox.com/scl/fi/nx9lys5jpw58r86skw4e5/unibus-rele
 			font-size: 1rem;
 		}
 
+		.hero-actions {
+			flex-direction: column;
+			width: 100%;
+		}
+
 		.btn {
 			width: 100%;
+		}
+
+		.btn-instagram {
+			order: 2;
+		}
+
+		.btn-primary {
+			order: 1;
 		}
 
 		.phone-frame {
